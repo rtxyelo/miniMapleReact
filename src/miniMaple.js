@@ -121,8 +121,8 @@ function getListOfTermsAndSigns(exp) {
     let firstSign = true
     for (let i = 0; i < exp.length; i++) {
         if (!allowedSymbols.includes(exp[i])) {
-            //throw new Error("wrong symbol in input "+exp[i]) 
-            throw "wrong symbol in input "+exp[i]
+            throw new Error("wrong symbol in input "+exp[i]) 
+            //throw "wrong symbol in input "+exp[i]
         }
         if (exp[i]==="+" || exp[i] ==="-") {
             listOfSigns.push(exp[i])
